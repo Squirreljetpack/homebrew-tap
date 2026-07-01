@@ -1,25 +1,25 @@
 class Matchmaker < Formula
   desc "Command-line interface for the matchmaker fuzzy finder"
   homepage "https://github.com/Squirreljetpack/matchmaker"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Squirreljetpack/matchmaker/releases/download/0.1.0/matchmaker-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "8fdf4ed6746d0044ac5a5a651a030e02b2ea55bb37f0091086186c45031ece0e"
+      url "https://github.com/Squirreljetpack/matchmaker/releases/download/0.1.1/matchmaker-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "b383af56254a53febcf63c7aec5f6473cf3d03c53e75045fff82bd6ef948bd7c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Squirreljetpack/matchmaker/releases/download/0.1.0/matchmaker-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "f4320aa38dbbac0876b4cbaca57970d1cb635c5d84488a8129be32383347148f"
+      url "https://github.com/Squirreljetpack/matchmaker/releases/download/0.1.1/matchmaker-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "474ee217626608c2a35fd1dddea0d177f83718cfb93aa12a32ef52b4465eb56c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Squirreljetpack/matchmaker/releases/download/0.1.0/matchmaker-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "31bbbb1130883b4a6697730c3ff610a54eb22494ed5d81737b947bce1044fa8f"
+      url "https://github.com/Squirreljetpack/matchmaker/releases/download/0.1.1/matchmaker-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "d3fc13d577d178ba4a63f041312b455d6c28171e915b5cf84a9552618e4f40a1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Squirreljetpack/matchmaker/releases/download/0.1.0/matchmaker-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "cf9a57c3dc5914884f8c082430c6977b948d63c2847662b9cf3bc60c9cd71d37"
+      url "https://github.com/Squirreljetpack/matchmaker/releases/download/0.1.1/matchmaker-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "23c2101452799ac1e42223858a7ab3c8373925bbb12b56671d5fa55860043002"
     end
   end
   license "MIT"
