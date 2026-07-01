@@ -1,25 +1,25 @@
 class Matchmaker < Formula
   desc "Command-line interface for the matchmaker fuzzy finder"
   homepage "https://github.com/Squirreljetpack/matchmaker"
-  version "0.0.42"
+  version "0.1.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Squirreljetpack/matchmaker/releases/download/0.0.42/matchmaker-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "c7ff3aff8f001c7d42d17758838eb4c8c6da3d58054a15311e9e31779cc01536"
+      url "https://github.com/Squirreljetpack/matchmaker/releases/download/0.1.0/matchmaker-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "8fdf4ed6746d0044ac5a5a651a030e02b2ea55bb37f0091086186c45031ece0e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Squirreljetpack/matchmaker/releases/download/0.0.42/matchmaker-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "cc1488ae918f08d521de51043e22c31c05de87fe55488865a245d0453234e475"
+      url "https://github.com/Squirreljetpack/matchmaker/releases/download/0.1.0/matchmaker-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "f4320aa38dbbac0876b4cbaca57970d1cb635c5d84488a8129be32383347148f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Squirreljetpack/matchmaker/releases/download/0.0.42/matchmaker-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "1ee5f4660ee61b931627ed3881182bf7126b99c69c21808b61da5ef57e252db0"
+      url "https://github.com/Squirreljetpack/matchmaker/releases/download/0.1.0/matchmaker-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "31bbbb1130883b4a6697730c3ff610a54eb22494ed5d81737b947bce1044fa8f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Squirreljetpack/matchmaker/releases/download/0.0.42/matchmaker-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "46f170f0aa3a8791cdedb0ac50d961386a146fea1532bb4aab7d336283b4b32b"
+      url "https://github.com/Squirreljetpack/matchmaker/releases/download/0.1.0/matchmaker-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "cf9a57c3dc5914884f8c082430c6977b948d63c2847662b9cf3bc60c9cd71d37"
     end
   end
   license "MIT"
