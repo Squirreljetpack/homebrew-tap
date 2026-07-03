@@ -1,25 +1,25 @@
 class Matchmaker < Formula
   desc "Command-line interface for the matchmaker fuzzy finder"
   homepage "https://github.com/Squirreljetpack/matchmaker"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Squirreljetpack/matchmaker/releases/download/0.1.1/matchmaker-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "b383af56254a53febcf63c7aec5f6473cf3d03c53e75045fff82bd6ef948bd7c"
+      url "https://github.com/Squirreljetpack/matchmaker/releases/download/0.1.2/matchmaker-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "38e24c20d2efeabb005c50861992ca9c64d735c91567d482155bc613918e7373"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Squirreljetpack/matchmaker/releases/download/0.1.1/matchmaker-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "474ee217626608c2a35fd1dddea0d177f83718cfb93aa12a32ef52b4465eb56c"
+      url "https://github.com/Squirreljetpack/matchmaker/releases/download/0.1.2/matchmaker-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "9fd78e5ec51966545c4956dd57741b905e596ea022af52e98c0512a4b03b9e93"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Squirreljetpack/matchmaker/releases/download/0.1.1/matchmaker-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "d3fc13d577d178ba4a63f041312b455d6c28171e915b5cf84a9552618e4f40a1"
+      url "https://github.com/Squirreljetpack/matchmaker/releases/download/0.1.2/matchmaker-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "240de80f3ea78cb5783ced9a0f5167de994c6b710460c09aeec0c65fa78f0b61"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Squirreljetpack/matchmaker/releases/download/0.1.1/matchmaker-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "23c2101452799ac1e42223858a7ab3c8373925bbb12b56671d5fa55860043002"
+      url "https://github.com/Squirreljetpack/matchmaker/releases/download/0.1.2/matchmaker-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "b30bf3e50b194ed1aef1ff54b09e19434173585e1fc7ff4026028ae2985a7a71"
     end
   end
   license "MIT"
