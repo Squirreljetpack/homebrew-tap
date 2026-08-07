@@ -1,14 +1,14 @@
 class Feeling < Formula
   desc "A CLI tool for tracking moods, journaling, habits, metrics, and for managing oneshot, recurring and scheduled tasks"
   homepage "https://github.com/Squirreljetpack/feeling"
-  version "0.2.2"
+  version "0.2.3"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/Squirreljetpack/feeling/releases/download/v0.2.2/feeling-aarch64-apple-darwin.tar.xz"
-    sha256 "09fa99c110b73ec1459dbeedba43b10eae82795969d1b6e603bd91defb6c7575"
+    url "https://github.com/Squirreljetpack/feeling/releases/download/v0.2.3/feeling-aarch64-apple-darwin.tar.xz"
+    sha256 "b7512357bcd2a65387c8b201a2228d35f98023e37c6812ab08d8228c57731708"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/Squirreljetpack/feeling/releases/download/v0.2.2/feeling-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "896c9962fe6012ee9792010d8d6082fc1cdd823ae854e003adfce1e4226cb586"
+    url "https://github.com/Squirreljetpack/feeling/releases/download/v0.2.3/feeling-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "cacec26e5affc0a6447e68f1f38c41bebb2f7f92a2e099d8cc874d85170db23a"
   end
 
   BINARY_ALIASES = {
