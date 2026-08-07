@@ -1,20 +1,20 @@
 class FeelingDynamic < Formula
   desc "Dynamic ONNX Runtime variant of feeling CLI (requires system libonnxruntime)"
   homepage "https://github.com/Squirreljetpack/feeling"
-  version "0.2.3"
+  version "0.2.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Squirreljetpack/feeling/releases/download/v0.2.3/feeling-dynamic-aarch64-apple-darwin.tar.xz"
-      sha256 "7b94dee14540e280e42470eb9336cec126b37bbd52bc119499d476a47bc5ebf3"
+      url "https://github.com/Squirreljetpack/feeling/releases/download/v0.2.4/feeling-dynamic-aarch64-apple-darwin.tar.xz"
+      sha256 "ad7a17e62452ad60e7b0d20082cd2b4013cf3e1051d8d727df102a61abac5687"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Squirreljetpack/feeling/releases/download/v0.2.3/feeling-dynamic-x86_64-apple-darwin.tar.xz"
-      sha256 "4b85454564ad28e40e2399781cdf914a32c5d3e1840dfcf74dca839c8f8e9af2"
+      url "https://github.com/Squirreljetpack/feeling/releases/download/v0.2.4/feeling-dynamic-x86_64-apple-darwin.tar.xz"
+      sha256 "73e5629f7450c2884aa1b2fa3be77c4d9a49df5baa62ce6735c3f7423afa9f42"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/Squirreljetpack/feeling/releases/download/v0.2.3/feeling-dynamic-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "a53e17d057b95ca2554c277b9a79ceed97440648a76fbbb4d9e16290e8860ad5"
+    url "https://github.com/Squirreljetpack/feeling/releases/download/v0.2.4/feeling-dynamic-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "6811831bb45e2d2bf6570c9b5fa17a4fd8ace51b3fbe4f7dc2e73c3719690871"
   end
 
   BINARY_ALIASES = {
