@@ -1,14 +1,14 @@
 class Im < Formula
   desc "A CLI tool for tracking moods, journaling, habits, metrics, and for managing oneshot, recurring and scheduled tasks"
   homepage "https://github.com/Squirreljetpack/im"
-  version "0.2.6"
+  version "0.2.7"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/Squirreljetpack/im/releases/download/v0.2.6/im-aarch64-apple-darwin.tar.xz"
-    sha256 "7830ae204be5ec273dabd0a034bee2ba8c85c6e4138341cb5b0623d922b104ae"
+    url "https://github.com/Squirreljetpack/im/releases/download/v0.2.7/im-aarch64-apple-darwin.tar.xz"
+    sha256 "8b0437897fc66905542daa4e75f92fa715a85c4bc97d0d73380fcabdfd45151f"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/Squirreljetpack/im/releases/download/v0.2.6/im-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "0d52b059d50e007c46e8a3a223211278c5c8c7356dcb57f8fca6dcff6dba8fc4"
+    url "https://github.com/Squirreljetpack/im/releases/download/v0.2.7/im-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "b3194ff0498154c322aa2edf13623dcf06eaa669f3128605a8c49075eaee326a"
   end
 
   BINARY_ALIASES = {
