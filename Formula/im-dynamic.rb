@@ -1,20 +1,20 @@
 class ImDynamic < Formula
   desc "Dynamic ONNX Runtime variant of im CLI (requires system libonnxruntime)"
   homepage "https://github.com/Squirreljetpack/im"
-  version "0.2.10"
+  version "0.2.11"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Squirreljetpack/im/releases/download/v0.2.10/im-dynamic-aarch64-apple-darwin.tar.xz"
-      sha256 "e92ecb92a8799eeebf49877a3d3b42aad9638b590ebb3f5ba4bc90b971d05cc7"
+      url "https://github.com/Squirreljetpack/im/releases/download/v0.2.11/im-dynamic-aarch64-apple-darwin.tar.xz"
+      sha256 "7cbde3704a1b49b7e9f2fb50f90874635e395d0ae4c1933bdc2796bf7ea0ae66"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Squirreljetpack/im/releases/download/v0.2.10/im-dynamic-x86_64-apple-darwin.tar.xz"
-      sha256 "9f836201b3ea33090eec3bb4a07d9fdf5d84002343a16ce2d569fdf1c0429da5"
+      url "https://github.com/Squirreljetpack/im/releases/download/v0.2.11/im-dynamic-x86_64-apple-darwin.tar.xz"
+      sha256 "72bf654214f6c805f85a846a472d8db4f72c0f90d7fe34704f949d2210fe885c"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/Squirreljetpack/im/releases/download/v0.2.10/im-dynamic-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "f70dc4b88a93ac5a2a947fb42da6571d3eab5abf5a4b34007ce293fc81e51813"
+    url "https://github.com/Squirreljetpack/im/releases/download/v0.2.11/im-dynamic-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "c165c48f1af000dd063ce0f66651708915b5308c191ebd90168797700550312d"
   end
 
   BINARY_ALIASES = {
