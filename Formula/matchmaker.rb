@@ -1,28 +1,28 @@
 class Matchmaker < Formula
   desc "Command-line interface for the matchmaker fuzzy finder"
   homepage "https://github.com/Squirreljetpack/matchmaker"
-  version "0.1.7"
+  version "0.1.8"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Squirreljetpack/matchmaker/releases/download/v0.1.7/matchmaker-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "6306daa6ef3d4cf3220002d800ba0f5f16340f5d2eabce857d3501978e50ecd1"
+      url "https://github.com/Squirreljetpack/matchmaker/releases/download/v0.1.8/matchmaker-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "0013f989351d90196816c8f78bdb28a2892d1b672834a3e94e7e396cd28c7c05"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Squirreljetpack/matchmaker/releases/download/v0.1.7/matchmaker-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "fa8b92cfc0a0dead8a68399d7ef1b10e8e8ef4ee31757ab832cf455fd1fd7f71"
+      url "https://github.com/Squirreljetpack/matchmaker/releases/download/v0.1.8/matchmaker-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "15b827d6fdd1350e30533de45c3003cdf1b53e533655d2004984f268dcf2ea46"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Squirreljetpack/matchmaker/releases/download/v0.1.7/matchmaker-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "4c7dc483946d2b35c0bbe8aca8e637af552d1f00764c16197e7380c74fcd458c"
+      url "https://github.com/Squirreljetpack/matchmaker/releases/download/v0.1.8/matchmaker-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "8ade9025f881ef5f26d658438391aa83495b58fa8c565aff0320d702ab5adbb9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Squirreljetpack/matchmaker/releases/download/v0.1.7/matchmaker-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c0036d9e3ca8d1de40b8a67efedc80f031170c005e81474b228c39eb0f971114"
+      url "https://github.com/Squirreljetpack/matchmaker/releases/download/v0.1.8/matchmaker-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "fd5695775be77eb4ddcb9c51be5f47e9fc87219f60e282b374c16e6cad4a5d32"
     end
   end
-  license "MIT"
+  license "AGPL-3.0-only"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":              {},
