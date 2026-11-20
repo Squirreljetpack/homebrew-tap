@@ -1,27 +1,28 @@
 class Fist < Formula
-  desc "Fist: Interactive Search Tool"
+  desc "F:st: fast, extensible terminal file manager"
   homepage "https://github.com/Squirreljetpack/fist"
-  version "0.0.4"
+  version "0.0.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Squirreljetpack/fist/releases/download/v0.0.4/fist-aarch64-apple-darwin.tar.xz"
-      sha256 "1cdca991f66d88b563f1ae05e89d6b3483022f3b536547b923eb4c8097f63b01"
+      url "https://github.com/Squirreljetpack/fist/releases/download/v0.0.5/fist-aarch64-apple-darwin.tar.xz"
+      sha256 "f1c3681fb100ee9cd49043e697a3cc82eb687f5e6cdc3e48476aa44d51d0670c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Squirreljetpack/fist/releases/download/v0.0.4/fist-x86_64-apple-darwin.tar.xz"
-      sha256 "c1f40c4ce6cc1009ff7d5bc3f4cd579fd03bbae30c240e1117051fe7c6ae7e91"
+      url "https://github.com/Squirreljetpack/fist/releases/download/v0.0.5/fist-x86_64-apple-darwin.tar.xz"
+      sha256 "94cb0f1f46234c2e97a59ef2ecf615c253776541e461f7247cd513874fef8520"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Squirreljetpack/fist/releases/download/v0.0.4/fist-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "1b00ece7328734b2204c22bf4f0e6b487a3b670bdb6d991a791bee2001510a9d"
+      url "https://github.com/Squirreljetpack/fist/releases/download/v0.0.5/fist-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "ece4d852a6a3b4e2ce60cb3a1090b0b5171b7bbb34b438ba77cd2225c9cb5462"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Squirreljetpack/fist/releases/download/v0.0.4/fist-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "2f245dcded51bf01c1d2929d901f5a473f7607f41c52e6fe647ecf39506ddf45"
+      url "https://github.com/Squirreljetpack/fist/releases/download/v0.0.5/fist-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "efe3db76c3fb2b670d3d0516b6e1123db5679be3cb0993265fa1be47584edf43"
     end
   end
+  license "AGPL-3.0-only"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":              {},
