@@ -1,25 +1,25 @@
 class Matchmaker < Formula
   desc "Command-line interface for the matchmaker fuzzy finder"
   homepage "https://github.com/Squirreljetpack/matchmaker"
-  version "0.1.9"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Squirreljetpack/matchmaker/releases/download/v0.1.9/matchmaker-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "3d91c28472e23b78dab83c0cf6373984ecf475a66eb018055f3f3b7fee70c348"
+      url "https://github.com/Squirreljetpack/matchmaker/releases/download/v0.2.0/matchmaker-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "e1fc0dce352ab84a1a04cc5117753f4a234b5c51c20407d89fe6891894a2ae1e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Squirreljetpack/matchmaker/releases/download/v0.1.9/matchmaker-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "7d24ae555cdf674623f1c865436e54de05daa52ff2a94c67c15ed9b3a7a1cb3c"
+      url "https://github.com/Squirreljetpack/matchmaker/releases/download/v0.2.0/matchmaker-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "a166346016801ef26c31077538fcbf3e963fbaefeb9bfc1f3fb35710c83f02cf"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Squirreljetpack/matchmaker/releases/download/v0.1.9/matchmaker-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "03912264ce8c4d2aedab97c70495a4618930ce9d9a0eb2dabe6a04c1c2f71104"
+      url "https://github.com/Squirreljetpack/matchmaker/releases/download/v0.2.0/matchmaker-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "24fe7e64482daab18d091dcec9de767143a7fc490ef18875490b8492aff93fe8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Squirreljetpack/matchmaker/releases/download/v0.1.9/matchmaker-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ed0bc0990ff669982dba68898331d8076d54235c04dbb0c993eca5816cc934d1"
+      url "https://github.com/Squirreljetpack/matchmaker/releases/download/v0.2.0/matchmaker-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "bcac3710ffe881e56eca0725710313b193347143769dd9148dccce53e08b60be"
     end
   end
   license "AGPL-3.0-only"
